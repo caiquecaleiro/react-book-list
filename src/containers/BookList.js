@@ -20,9 +20,12 @@ class BookList extends Component {
 
   render() {
     return (
-      <ul className="list-group col-sm-4">
-        {this.renderList()}
-      </ul>
+      <div>
+        <h5>Available Books:</h5>
+        <ul className="list-group">
+          {this.renderList()}
+        </ul>
+      </div>
     );
   }
 }

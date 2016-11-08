@@ -16,6 +16,9 @@ class BookDetail extends Component {
         <div>
           Pages: {this.props.book.pages}
         </div>
+        <div>
+          <img src={this.props.book.image} />
+        </div>
       </div>
     )
   }
