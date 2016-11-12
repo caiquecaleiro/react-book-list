@@ -12,7 +12,14 @@ class BookList extends Component {
           key={book.title} 
           onClick={() => this.props.selectBook(book)}
           className="list-group-item">
-          {book.title}
+          <div className>
+            <div className="img-view">
+              <img src={book.image} alt={book.title} />
+            </div>
+            <div>
+              {book.title}
+            </div>
+          </div>
         </li>
       );
     });
