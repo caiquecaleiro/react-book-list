@@ -13,11 +13,11 @@ class BookList extends Component {
           onClick={() => this.props.selectBook(book)}
           className="list-group-item">
           <div className>
-            <div className="img-view">
-              <img src={book.image} alt={book.title} />
+            <div>
+              <img src={book.image} title={book.title} />
             </div>
             <div>
-              {book.title}
+              <span>{book.title}</span>
             </div>
           </div>
         </li>
@@ -27,7 +27,7 @@ class BookList extends Component {
 
   render() {
     return (
-      <div>
+      <div className="book-list">
         <h5>Available Books:</h5>
         <ul className="list-group">
           {this.renderList()}

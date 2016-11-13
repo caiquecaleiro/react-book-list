@@ -8,23 +8,16 @@ class BookDetail extends Component {
     }
 
     return (
-      <div>
+      <div className="book-detail">
         <h3>{this.props.book.title}</h3>
-        <div className="col-md-3">
+        <div className="col-md-12">
           <p>
-            Author: {this.props.book.author}
+            {this.props.book.description}
           </p>
-          <p>
-            Pages: {this.props.book.pages}
-          </p>
-        <div className="col-md-3">
-          <img src={this.props.book.image} />
         </div>
-        </div>
-        <div className="col-md-9">
-        <p>
-          {this.props.book.description}
-        </p>
+        <div className="col-md-12">
+          <p>Author: {this.props.book.author}</p>
+          <p>Pages: {this.props.book.pages}</p>
         </div>
       </div>
     )

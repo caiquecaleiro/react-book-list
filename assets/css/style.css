@@ -1,7 +1,25 @@
 .pageheader {
   padding: 2rem 15px;
   margin-bottom: 1.5rem;
-  color: #cdbfe3;
+  color: #aae1ff;
   text-align: center;
-  background-color: #563d7c;
+  background-color: #1372a5;
 } 
+
+.book-list {
+  text-align: center;
+}
+
+.book-list span {
+  font-style: italic;
+  font-size: 18px;
+}
+
+.book-detail h3  {
+  text-align: center;
+  padding: 15px;
+}
+
+.book-detail p {
+  text-align: justify;
+}
